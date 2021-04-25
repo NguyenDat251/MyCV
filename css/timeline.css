@@ -1,0 +1,17 @@
+.timeline {
+  background: url("../images/timeline_bg.jpeg");
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: #26272b;
+  opacity: 0.8;
+  z-index: 1;
+}

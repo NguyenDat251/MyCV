@@ -1,0 +1,192 @@
+.overview {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("../images/background.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: #26272b;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.layer {
+}
+
+.introduce {
+  width: 1200px;
+  overflow: hidden;
+
+  height: 200px;
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
+
+  color: white;
+  z-index: 2;
+}
+
+.introduce * {
+  font-weight: bold;
+  font-size: 80px;
+  font-family: Poppins, "sans-serif";
+}
+
+.nameAndCareer {
+  position: relative;
+}
+
+/* .career {
+  background: white;
+  color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: elastic 5s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+} */
+
+@keyframes elastic {
+  0% {
+    width: 0px;
+  }
+
+  50% {
+    width: 500px;
+  }
+
+  100% {
+    width: 0px;
+  }
+}
+
+.iAm {
+  margin-right: 15px;
+}
+
+.fadeEffect {
+  animation: fade 4s infinite;
+}
+
+.divInline {
+  display: inline-block;
+  width: 55px;
+}
+
+.horizontalMove {
+  animation: horizontalMove1 4s infinite;
+}
+
+.career {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  animation: careerFade 4s infinite;
+
+  padding: 0px 20px;
+
+  border-radius: 5px;
+  /* border: 1px solid #fff; */
+
+  background-color: #fff;
+  color: black;
+  white-space: nowrap;
+}
+
+.divDT {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+}
+
+.up {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+
+  animation: up 4s infinite;
+}
+
+.down {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+
+  animation: down 4s infinite;
+}
+
+@keyframes horizontalMove1 {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: -74px;
+  }
+}
+
+@keyframes up {
+  0%,
+  100% {
+    bottom: -12px;
+  }
+
+  30%,
+  60% {
+    bottom: 50px;
+  }
+}
+
+@keyframes down {
+  0%,
+  100% {
+    bottom: -12px;
+    left: 0;
+  }
+
+  20%,
+  65% {
+    bottom: -84px;
+    left: -70;
+  }
+
+  40%,
+  45% {
+    bottom: -84px;
+    left: -140px;
+  }
+}
+
+@keyframes careerFade {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
