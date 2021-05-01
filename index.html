@@ -35,25 +35,53 @@
       href="./css/nav.css"
     />
     <script src="main.js"></script>
+    <script src="./js/nav.js"></script>
   </head>
   <body>
-    <div class="nav"></div>
     <div class="overview">
-      <div class="layer"></div>
-      <div class="introduce">
-        <span class="iAm">I am</span>
-        <div class="nameAndCareer">
-          <div class="divDT"><span class="up">D</span></div>
+      <div id="nav" class="nav"></div>
+      <div class="overviewContent">
+        <div class="layer"></div>
+        <div class="introduce">
+          <span class="iAm">I am</span>
+          <div class="nameAndCareer">
+            <div class="divDT"><span class="up">D</span></div>
 
-          <span class="divInline">
-            <span class="horizontalMove">a</span>
-          </span>
-          <div class="divDT"><span class="down">t</span></div>
-          <p class="career">front-end developer</p>
-          <!-- <p class="career">a front-end developer</p> -->
+            <span class="divInline">
+              <span class="horizontalMove">a</span>
+            </span>
+            <div class="divDT"><span class="down">t</span></div>
+            <p class="career">front-end developer</p>
+            <!-- <p class="career">a front-end developer</p> -->
+          </div>
         </div>
       </div>
     </div>
-    <div class="timeline"></div>
+    <div id="timeline" class="timeline blackFilter">
+      <div id="timelineFooter" class="footerMountain"></div>
+      <p class="timelineTitle">Timeline</p>
+      <div class="standLine"></div>
+      <div class="timePoint">
+        <p>2016 - 2020</p>
+        <p>University of science</p>
+      </div>
+      <div class="standLine"></div>
+      <div class="timePoint">
+        <p>2018 - 2020</p>
+        <p>Join some company as an intern</p>
+      </div>
+      <div class="standLine"></div>
+
+      <div class="timePoint">
+        <p>2020 - present</p>
+        <p class="longTimePoitnContent">
+          Working in company Journey Horizon as a front-end developer
+        </p>
+      </div>
+    </div>
   </body>
+
+  <script>
+    window.onscroll = setNavClass;
+  </script>
 </html>

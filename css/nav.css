@@ -1,5 +1,5 @@
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
 
@@ -10,4 +10,10 @@
   height: 80px;
 
   background-color: rgb(225, 225, 225, 0.4);
+}
+
+.stickyNav {
+  background-color: #fff;
+  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.4);
 }
